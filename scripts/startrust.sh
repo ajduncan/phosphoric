@@ -6,6 +6,7 @@ clear while : do
   -server.port 28015 \
   -rcon.ip 0.0.0.0 \
   -rcon.port 28016 \
+  -rcon.web 1 \
   -rcon.password "rustadmin" \
   -server.maxplayers 5 \
   -server.hostname "Testworld" \
@@ -17,6 +18,8 @@ clear while : do
   -server.globalchat true \
   -server.description "A test server you should not use" \
   -server.headerimage "image url" \
-  -server.url "web url"
+  -server.url "web url" \
+  -decay.scale 0 \
+  -decay.upkeep 0
   echo "\nRestarting server...\n"
 done
